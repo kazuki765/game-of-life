@@ -50,7 +50,7 @@ function GameOfLifeProvider(props: { children: JSXElement; scale: number }) {
         Array.from(
           { length: scale() },
           (_, ci) =>
-            Math.floor(Math.random() * 10) % 3 === 0 &&
+            ri % Math.floor(Math.random() * 3) === 0 &&
             ci % Math.floor(Math.random() * 10) === 0
         )
       )
